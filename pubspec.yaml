@@ -1,0 +1,38 @@
+name: tic_tac_toe
+description: "A premium black & gold Tic Tac Toe game with dark/light themes, 2-player and vs-computer modes."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.2
+
+  # Local persistence (theme preference, score history)
+  shared_preferences: ^2.2.3
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+  # Date formatting for play-history timestamps
+  intl: ^0.19.0
+
+  # Firebase — authentication + play history persistence
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
